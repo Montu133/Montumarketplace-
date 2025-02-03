@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #222;
+    color: white;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Video Latar Belakang */
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+/* Halaman Awal */
+#welcome-screen, #loading-screen, #main-content, #order-popup {
+    display: none;
+}
+
+#welcome-screen {
+    display: block;
+    margin-top: 20%;
+}
+
+input, button {
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+}
+
+/* Loading Screen */
+#loading-screen {
+    margin-top: 20%;
+}
+
+.loader {
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Halaman Utama */
+.rgb-title {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, red, blue, green, yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rgbAnimation 3s infinite linear;
+}
+
+@keyframes rgbAnimation {
+    0% { filter: hue-rotate(0deg); }
+    100% { filter: hue-rotate(360deg); }
+}
+
+/* Produk */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product {
+   
+::contentReference[oaicite:1]{index=1}
+
+  
