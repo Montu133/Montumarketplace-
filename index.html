@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montu Marketplace</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Video Latar Belakang -->
+    <video autoplay muted loop id="background-video">
+        <source src="https://e1.pxfuel.com/desktop-wallpaper/605/420/desktop-wallpaper-anime-naruto-bleach-bergerak.jpg" type="video/mp4">
+        Browser Anda tidak mendukung tag video.
+    </video>
+
+    <!-- Halaman Awal -->
+    <div id="welcome-screen">
+        <h2>Masukkan Username:</h2>
+        <input type="text" id="username" placeholder="Masukkan username Anda">
+        <button onclick="startLoading()">Enter</button>
+    </div>
+
+    <!-- Animasi Loading -->
+    <div id="loading-screen">
+        <h2>Selamat Datang, <span id="loading-username"></span></h2>
+        <div class="loader"></div>
+    </div>
+
+    <!-- Halaman Utama -->
+    <div id="main-content">
+        <h1 class="rgb-title">MONTU MARKETPLACE</h1>
+        <h2 id="user-greeting"></h2>
+        <h3>LIST JUALAN MONTU</h3>
+
+        <div class="product-list">
+            <div class="product">
+                <h4>Panel 5GB</h4>
+                <p>Harga: Rp 6.000</p>
+                <button onclick="showPopup('Panel 5GB')">Order</button>
+            </div>
+            <div class="product">
+                <h4>Panel 10GB</h4>
+                <p>Harga: Rp 7.000</p>
+                <button onclick="showPopup('Panel 10GB')">Order</button>
+            </div>
+            <div class="product">
+                <h4>Panel Unlimited</h4>
+                <p>Harga: Rp 8.000</p>
+                <button onclick="showPopup('Panel Unlimited')">Order</button>
+            </div>
+            <div class="product">
+                <h4>Jasa Buat Website</h4>
+                <p>Harga: Rp 40.000</p>
+                <button onclick="showPopup('Jasa Buat Website')">Order</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup Pembayaran -->
+    <div id="order-popup">
+        <div class="popup-content">
+            <h3 id="popup-product"></h3>
+            <p>Silakan transfer ke nomor DANA: <strong>+62 878-3651-8013</strong></p>
+            <a href="https://www.hotelmurah.com" target="_blank">Bayar via QRIS</a>
+            <button id="confirm-order">Konfirmasi</button>
+            <button onclick="closePopup()">Tutup</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Owner: Montu</p>
+        <p>Email: montumarketplace@gmail.com</p>
+        <p>WhatsApp: +62 878-3651-8013</p>
+        <p>Alamat: Jakarta, Indonesia</p>
+        <p>Sejarah: Marketplace terpercaya sejak 2024</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
